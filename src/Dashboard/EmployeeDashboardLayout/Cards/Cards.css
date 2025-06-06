@@ -1,0 +1,94 @@
+/* Cards Container */
+.cards-container {
+    width: 100%;
+    height: 200px;
+    /* background-color: #f1f1f1; */
+    padding: 20px 0;
+}
+
+/* Cards Content */
+.cards-content {
+    width: 100%;
+    /* max-width: 1200px; */    /* Limit width on larger screens */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Cards Row */
+.cards-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Increase gap between cards */
+    align-items: center;
+}
+
+/* Individual Card Design */
+.cards-design {
+    width: 18%; /* Decreased width for better spacing */
+    height: 180px; /* Reduced height for better balance */
+    padding: 20px;
+    border-radius: 12px; /* Rounded corners */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    cursor: pointer;
+}
+
+/* Hover Effect for Cards */
+.cards-design:hover {
+    transform: translateY(-10px); /* Slight lift effect */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+/* Number Count Styling */
+.number-count {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow on number */
+}
+
+/* Card Titles */
+.cards-design h3 {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+/* Background Gradients for Cards */
+.cards-design:nth-child(1) {
+    background: linear-gradient(135deg, #3498db, #2980b9); /* Blue gradient */
+}
+
+.cards-design:nth-child(2) {
+    background: linear-gradient(135deg, #2ecc71, #27ae60); /* Green gradient */
+}
+
+.cards-design:nth-child(3) {
+    background: linear-gradient(135deg, #1abc9c, #16a085); /* Dark cyan gradient */
+}
+
+.cards-design:nth-child(4) {
+    background: linear-gradient(135deg, #e74c3c, #c0392b); /* Red gradient */
+}
+
+.cards-design:nth-child(5) {
+    background: linear-gradient(135deg, #f39c12, #e67e22); /* Orange gradient */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cards-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cards-design {
+        width: 100%;
+    }
+}

@@ -1,0 +1,274 @@
+/* TaskList.css - Modern Responsive Design */
+
+.tasklist-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Section Styling */
+section {
+    background: linear-gradient(135deg, #1e1e2f, #252542);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Ongoing Tasks */
+.ongoing-tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tasks-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.task-card {
+    background: #2b2b44;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffdd57;
+}
+
+/* Recent Activity */
+.recent-activity {
+    display: flex;
+    flex-direction: column;
+}
+
+.activity-feed {
+    max-height: 200px;
+    overflow-y: auto;
+    background: #32324a;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Performance Chart */
+.performance-chart {
+    text-align: center;
+}
+
+.chart-container {
+    background: #1a1a2e;
+    height: 300px;
+    border-radius: 10px;
+}
+
+/* Quick Actions */
+.quick-actions {
+    text-align: center;
+}
+
+.actions-buttons button {
+    background: #ff5722;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.actions-buttons button:hover {
+    background: #e64a19;
+}
+
+/* Motivational Section */
+.motivational-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.leaderboard {
+    background: #252542;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tasklist-container {
+        padding: 10px;
+    }
+    section {
+        padding: 15px;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------- */
+
+
+
+
+
+
+/* Container for the entire task Cards */
+/* .tasklist-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: #f7f9fc;
+  } */
+  
+  /* Individual task card styling */
+  .tasklist-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .tasklist-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Priority and remaining time section */
+  .priority-date-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #555;
+  }
+  
+  .task-priority {
+    background-color: #f0f3ff;
+    color: #4b6cb7;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+  }
+  
+  .task-date {
+    color: #ff6b6b;
+  }
+  
+  /* Title and description */
+  .taskname-heading {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .taskname-description {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 1.2rem;
+  }
+  
+  /* Buttons container */
+  .mark-btnn {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: flex-end;
+  }
+  
+  /* Button base style */
+  .task-action-btn {
+    padding: 0.6rem 1.1rem;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    background: rgb(1, 96, 248);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .task-failed-btn{
+    padding: 0.6rem 1.1rem;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    background-color: #d70808;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .task-failed-btn:hover{
+    cursor: not-allowed;
+  }
+
+  .task-completed-btn{
+    padding: 0.6rem 1.1rem;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    background-color: #74b90b;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .task-completed-btn:hover{
+    cursor: not-allowed;
+  }
+
+  .task-action-btn:hover {
+    color: #000;
+    border-color: #06f9e4;
+    background: rgb(1, 96, 248);
+    
+  }
+  
+  /* Gradient backgrounds for buttons */
+  .bg-linear-complete {
+    background: linear-gradient(135deg, #00b894, #55efc4);
+  }
+  
+  .bg-linear-complete:hover {
+    background: linear-gradient(135deg, #00cec9, #81ecec);
+  }
+  
+  .bg-linear-fail {
+    background: linear-gradient(135deg, #d63031, #ff7675);
+  }
+  
+  .bg-linear-fail:hover {
+    background: linear-gradient(135deg, #e17055, #fab1a0);
+  }
+  

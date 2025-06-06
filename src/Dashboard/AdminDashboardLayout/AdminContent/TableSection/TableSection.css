@@ -1,0 +1,63 @@
+.table-section {
+  background-color: #9121c9;
+  padding: 20px;
+}
+
+.table-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-section th, .table-section td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+.totaltasks-card{
+  background-color: #9121c9;
+}
+.epmNAME-card{
+  background-color: #54858f;
+}
+.epmID-card{
+  background-color: #998286;
+}
+.newtask-card{
+  background: linear-gradient(135deg, #3498db, #2980b9);
+}
+.acceptedtask-card{
+  background: linear-gradient(135deg, #1abc9c, #16a085);
+}
+.failedtask-card{
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+.pendingtask-card{
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+}
+.completedtask-card{
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .card {
+    flex: 1 1 100%;
+  }
+
+  .site-traffic, .weekly-sales {
+    flex: 1 1 100%;
+  }
+} 
+
+@media screen and (max-width: 480px) {
+  .topbar input {
+    margin-right: 10px;
+  }
+
+  .icons i {
+    margin-left: 5px;
+  }
+} 

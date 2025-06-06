@@ -1,0 +1,39 @@
+.overview {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.card {
+  /* background-color: #1d97cc; */
+  padding: 20px;
+  flex: 1 1 calc(25% - 20px);
+  margin: 10px;
+  text-align: center;
+}
+
+.card span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+/* 
+.totaltasks-card{
+  background-color: #9121c9;
+}
+.newtask-card{
+  background: linear-gradient(135deg, #3498db, #2980b9);
+}
+.acceptedtask-card{
+  background: linear-gradient(135deg, #1abc9c, #16a085);
+}
+.failedtask-card{
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+.pendingtask-card{
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+}
+.completedtask-card{
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+} */
